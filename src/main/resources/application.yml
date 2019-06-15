@@ -1,0 +1,13 @@
+server.port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://gitlab.sqmall-inc.com/config-test/{application}.git
+          timeout: 20
+          skipSslValidation: true
+  security:
+    user:
+      name: user
+      password: root123456
